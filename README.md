@@ -1,2 +1,2 @@
-# MyBurgerApp-v1
+# MyBurger
 Created with CodeSandbox
