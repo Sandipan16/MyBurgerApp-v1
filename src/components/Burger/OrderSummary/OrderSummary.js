@@ -16,9 +16,16 @@ export default props => {
       <h1>Your Order</h1>
       <h3>Following ingredients of your delicious Burger</h3>
       <ul>{order}</ul>
+      <p>
+        <strong>Total price: {props.price.toFixed(2)}</strong>
+      </p>
       <p>Continue to checkout?</p>
-      <button className={styles.Button + " " + styles.Success}>CONTINUE</button>
-      <button className={styles.Button + " " + styles.Danger}>CANCEL</button>
+      <button className={styles.Success} onClick={props.continue}>
+        CONTINUE
+      </button>
+      <button className={styles.Danger} onClick={props.cancel}>
+        CANCEL
+      </button>
     </div>
   );
 };

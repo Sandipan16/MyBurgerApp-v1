@@ -1,11 +1,12 @@
 import React from "react";
-import Auxi from "../../hoc/Auxi";
+import Toolbar from "../../components/Toolbar/Toolbar";
+import classes from "./Layout.module.css";
 
 export default props => {
   return (
-    <Auxi>
-      <div>toolber,Slidebar,dropdown</div>
+    <div className={classes.Layout}>
+      <Toolbar />
       <main>{props.children}</main>
-    </Auxi>
+    </div>
   );
 };
